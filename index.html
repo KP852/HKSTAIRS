@@ -2,18 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daily Photo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>1 Stair a Day</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    1 stair a day — Hong Kong for now, but will most likely expand to other places — ongoing project by <a href="https://krisprovoost.photography" target="_blank">krisprovoost.photography</a>
+  </header>
   <div class="container">
-    <aside class="calendar" id="calendar"></aside>
-    <main class="photo-viewer">
-      <h2 id="photo-date"></h2>
-      <img id="photo" src="" alt="Daily Photo" />
-      <p id="photo-title"></p>
-    </main>
+    <aside id="calendar"></aside>
+    <main id="gallery"></main>
+  </div>
+  <div id="overlay">
+    <span id="close">&times;</span>
+    <img id="overlay-img" src="" alt="" />
+    <p id="overlay-title"></p>
   </div>
   <script src="script.js"></script>
 </body>
